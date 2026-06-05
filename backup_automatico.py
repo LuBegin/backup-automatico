@@ -23,7 +23,7 @@ copiar_pasta_para_diretório(origem_dir, destino_dir)
 if "Pasta copiada para: {dest_dir}":
     print("Backup realizado com sucesso!")
 else:
-    print("Aguardando...")
+    print("Pasta já estava salva!")
 
 schedule.every().day.at("21:31").do(copiar_pasta_para_diretório, origem_dir, destino_dir)
 
